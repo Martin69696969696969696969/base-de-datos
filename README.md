@@ -1,4 +1,4 @@
-📚 Sistema de Biblioteca en Python y MySQL
+# 📚 Sistema de Biblioteca en Python y MySQL
 
 Este proyecto implementa un sistema de gestión de biblioteca utilizando Python y MySQL.
 Permite administrar libros, usuarios y préstamos a través de una interfaz de consola interactiva, aplicando los principios de Programación Orientada a Objetos (POO) y manejo de base de datos con el módulo mysql.connector.
