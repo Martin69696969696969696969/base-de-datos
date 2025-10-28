@@ -1,9 +1,13 @@
+
+# Project Title
+
+A brief description of what this project does and who it's for
 # 📚 Sistema de Biblioteca en Python y MySQL
 
 Este proyecto implementa un sistema de gestión de biblioteca utilizando Python y MySQL.
 Permite administrar libros, usuarios y préstamos a través de una interfaz de consola interactiva, aplicando los principios de Programación Orientada a Objetos (POO) y manejo de base de datos con el módulo mysql.connector.
 
-🧩 Características principales
+## 🧩 Características principales
 
 ✅ Conexión a una base de datos MySQL
 ✅ Registro, búsqueda y listado de libros
@@ -13,22 +17,27 @@ Permite administrar libros, usuarios y préstamos a través de una interfaz de c
 ✅ Registro de eventos mediante logging (biblioteca.log)
 ✅ Diseño modular y orientado a objetos (POO)
 
-⚙️ Requisitos
+## ⚙️ Requisitos
 
 Python 3.8+
 
 MySQL Server
 
+
+```bash
 Módulo mysql-connector-python
 
 Instala el conector ejecutando:
 
 pip install mysql-connector-python
 
-🗄️ Estructura de la base de datos
+```
+
+## 🗄️ Estructura de la base de datos
 
 Ejecuta en MySQL los siguientes comandos para crear la base de datos y sus tablas:
 
+``` bash
 CREATE DATABASE biblioteca;
 USE biblioteca;
 
@@ -55,8 +64,8 @@ CREATE TABLE prestamos (
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
     FOREIGN KEY (id_libro) REFERENCES libros(id)
 );
-
-🚀 Ejecución del programa
+```
+## 🚀 Ejecución del programa
 
 Clona o descarga el repositorio.
 
@@ -64,8 +73,8 @@ Asegúrate de tener corriendo tu servidor MySQL.
 
 Modifica los datos de conexión en la clase ConexionBD (usuario, contraseña, host, base de datos).
 
-Ejecuta el programa:
-
+### Ejecuta el programa:
+```
 python biblioteca.py
 
 🧠 Uso del menú
@@ -101,15 +110,18 @@ Registrar préstamo de un libro
 Listar préstamos actuales y pasados
 
 Devolver libro (actualiza disponibilidad y fecha de devolución)
+```
 
-🧱 Clases principales (POO)
+## 🧱 Clases principales (POO)
+
 Clase	Responsabilidad	Conceptos POO
 ConexionBD	Maneja la conexión y ejecución de queries a MySQL	Encapsulamiento, manejo de errores
 Libro	Representa un libro con título, autor, año y disponibilidad	Encapsulamiento, validación
 Usuario	Representa un usuario con nombre y tipo (estudiante, profesor, administrador)	Encapsulamiento
 Prestamo	Modela el préstamo de un libro a un usuario	Composición, validación
 SistemaBiblioteca	Coordina la interacción entre todas las clases y el usuario	Abstracción, polimorfismo funcional
-🪵 Logging
+
+## 🪵 Logging
 
 Todas las operaciones se registran en el archivo biblioteca.log con formato:
 
@@ -120,19 +132,22 @@ Todas las operaciones se registran en el archivo biblioteca.log con formato:
 
 Esto permite llevar un historial de eventos importantes, errores y operaciones.
 
-🧪 Datos de prueba
+## 🧪 Datos de prueba
 
 Puedes insertar algunos datos automáticamente descomentando la función al final del código:
+
+```
 
 if __name__ == "__main__":
     sistema = SistemaBiblioteca()
     insertar_datos_prueba(sistema)
     sistema.menu()
 
+```
 
 Esto agregará libros, usuarios y un préstamo inicial para pruebas.
 
-🧩 Principios POO aplicados
+## 🧩 Principios POO aplicados
 
 Encapsulamiento: Uso de atributos privados (__atributo) con métodos get_ y set_.
 
@@ -144,7 +159,7 @@ Modularidad: Cada clase tiene responsabilidades bien definidas.
 
 Polimorfismo (parcial): Uso uniforme de métodos get/set y menu_ en distintas entidades.
 
-💡 Mejoras futuras
+## 💡 Mejoras futuras
 
 Implementar interfaz gráfica con Tkinter o PyQt.
 
@@ -156,11 +171,12 @@ Crear API REST con Flask o FastAPI.
 
 Controlar multas o fechas límite de devolución.
 
-✍️ Autor
+### ✍️ Autor
 
-Desarrollado por [Tu Nombre]
-Proyecto educativo — Gestión de Biblioteca en Python y MySQL.# base-de-datos
-base de datos
+Desarrollado por Martin
+
+Proyecto educativo — Gestión de Biblioteca en Python y MySQL.
 
 <img width="1652" height="709" alt="image" src="https://github.com/user-attachments/assets/c3f3eee4-20f5-4b32-8d29-bf4656be24ec" />
+
 
