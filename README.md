@@ -10,11 +10,17 @@ Permite administrar libros, usuarios y préstamos a través de una interfaz de c
 ## 🧩 Características principales
 
 ✅ Conexión a una base de datos MySQL
+
 ✅ Registro, búsqueda y listado de libros
+
 ✅ Registro, búsqueda y listado de usuarios
+
 ✅ Registro, listado y devolución de préstamos
+
 ✅ Validación de datos y manejo de errores
+
 ✅ Registro de eventos mediante logging (biblioteca.log)
+
 ✅ Diseño modular y orientado a objetos (POO)
 
 ## ⚙️ Requisitos
